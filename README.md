@@ -1,85 +1,79 @@
-# 📌 Plugin Navn
+# 📌 Linguino
 
 [![License](https://img.shields.io/github/license/kdsn/plugin-template)](LICENSE)
 [![Contributors](https://img.shields.io/github/contributors/kdsn/plugin-template)](https://github.com/kdsn/plugin-template/graphs/contributors)
 
 🔹 **Short description:**  
-A concise explanation of what the WordPress plugin does.
+Linguino is a minimal multilingual plugin for WordPress, using native APIs and subdirectory-based language switching.
 
 ## **Demo / Live Version**
-[🔗 Se live her](https://din-live-url.com) *(hvis relevant)*
+[🔗 (coming soon)](https://kdsn.dk) 
 
 ## **Screenshots**
 ![Screenshot](docs/screenshot1.png)  
-*(Tilføj relevante billeder, der viser UI eller funktionalitet)*
 
 ## Features
-  ✅ Feature 1 <br/>
-  ✅ Feature 2 <br/>
-  ✅ Feature 3 <br/>
+  ✅ Language configuration with defaults <br>
+  ✅ Subdirectory-based URL rewriting <br>
+  ✅ Automatic detection and formatting of date/time per language <br>
+  ✅ Translation group support between posts/pages <br>
+  ✅ Frontend language switcher (shortcode/widget) <br>
+  ✅ Simple admin interface for managing languages and translations <br>
 
 ## Tech Stack & Dependencies
 | Technology | Version  |
 |-----------|-----------|
 | PHP       | 7.4 / 8.x |
-| WordPress | 18.2.0    |
-| MySQL     | Optional  |
+| WordPress | 6.x+      |
 
 ## Installation
 
 ### Option 1: Upload via WordPress Admin
-```bash
-1 Go to Plugins > Add New
+```txt
+1. Go to Plugins > Add New
 
-2 Click "Upload Plugin"
+2. Click "Upload Plugin"
 
-3 Select the plugin-template.zip file
+3. Select linguino.zip
 
-4 Click "Install Now"
+4. Click "Install Now"
 
-5 Activate the plugin
+5. Activate the plugin
 
 ```
 
 ### Option 2: Manual Installation
-```bash
-1 Clone the repository:
-  git clone https://github.com/USERNAME/PLUGIN.git
+```txt
+1. Clone the repository:
+   git clone https://github.com/kdsn/linguino.git
 
-2 Copy the folder into your WordPress installation under:
-  wp-content/plugins/
+2. Copy the folder into:
+   wp-content/plugins/
 
-3 Go to WordPress admin and activate the plugin under Plugins.
+3. Activate it via the WordPress admin panel.
 
 ```
 
 ## Usage
 Once activated:
-- Use the shortcode [my_plugin_shortcode] inside any post or page.
-- Go to Settings > Plugin Name to configure options.
-
-## API Documentation
-- GET /wp-json/plugin/v1/data - Returns plugin data
-- POST /wp-json/plugin/v1/update - Updates settings
-
-For full API reference, see: docs/api-reference.md
- 
+- Configure languages via Settings > Linguino
+- Add [linguino_switcher] to your theme or content
+- Manage translations via the post editor and “Add translation” UI
 
 ## Architecture & Design
-A general overview of plugin structure is available at docs/architecture.md.
+Plugin structure follows standard WP practices.
+All logic is encapsulated in plugin root, with admin and public logic separated.
 
 ## Roadmap & Future Updates
-- Feature 1
-- Feature 2
-- Feature 3
-
-See full roadmap in [`docs/roadmap.md`](docs/roadmap.md).
+- ACF & WooCommerce integration
+- JSON-based language definitions
+- Language fallback chain
 
 ## Contributing
 We welcome contributions! See [`docs/contributing.md`](docs/contributing.md) for guidelines.
 
 ## Issues & Bug Reports
-Found a bug? [Open an issue](https://github.com/kdsn/project-template/issues).
+Found a bug? [Open an issue](https://github.com/kdsn/linguino/issues).
 
 ## License
 This plugin is licensed under the MIT License.

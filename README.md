@@ -70,7 +70,7 @@ All logic is encapsulated in plugin root, with admin and public logic separated.
 - Language fallback chain
 
 ## Contributing
-We welcome contributions! See [`docs/contributing.md`](docs/contributing.md) for guidelines.
+We welcome contributions!
 
 ## Issues & Bug Reports
 Found a bug? [Open an issue](https://github.com/kdsn/linguino/issues).
